@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>English Dictionary</h1>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter a word">
+            <button id="searchButton">Search</button>
+        </div>       
+
+        <div class="resultContainer" id="result-container">
+            <h2 id="wordTitle">Content</h2>
+            <div id="wordDescription">Content</div>
+            <div id="audioContainer">
+             <button id="audioButton"><i class="fa fa-volume-up"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

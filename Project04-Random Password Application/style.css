@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,  sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right,#4e54c8,#8f94fb);
+}
+
+.container{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1{
+    font-weight: bold;
+    margin-bottom: 36px;
+    text-align: center;
+    color: #333;
+    text-decoration: underline;
+}
+
+.inputBox{
+    position: relative;
+    margin-bottom: 5px;
+}
+.inputBox span{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.passBox{
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    color: #333;
+    outline: none;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.row p,
+.row label{
+    flex-basis: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.row p{
+    font-weight: 700;
+}
+
+.row input[type="checkbox"]{
+    margin-right: 8px;
+}
+
+.genBtn{
+    width: 100%;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3162cb;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.genBtn:hover{
+    background-color: #1d1e20;
+}
+
+input[type="range"]{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#sliderValue{
+    margin-right: 7px;
+}
+
+.pass-indicator{
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background:#dfdfdf;
+    border-radius: 25px;
+}
+
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+
+}
+
+.pass-indicator.weak::before{
+    width: 20%;
+    background-color: #e64a4a;
+}
+
+.pass-indicator.medium::before{
+    width: 50%;
+    background-color: #f1c80b;
+}
+
+.pass-indicator.strong::before{
+    width: 100%;
+    background-color: #4285f4;
+}
