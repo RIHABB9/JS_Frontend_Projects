@@ -1,0 +1,92 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #4f4657;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 500px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: #252525;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.input-group{
+    margin-bottom: 20px;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select{
+
+    width: 94%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #c50752;
+    border-radius: 5px;
+    background-color: #252525;
+    color: #ffffff;
+}
+
+.input-group select{
+    width: 100%;
+}
+
+
+.input-group input::-webkit-outer-spin-button,
+.input-group input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.input-group input:focus,
+.input-group select:focus{
+    outline: none;
+    border-color: #7e0541;
+}
+
+.result{
+    margin-top: 30px;
+    border-top: 2px solid #f2f2f2 ;
+    padding-top: 20px;
+}
+
+.result h2{
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.result div{
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#calculateBtn{
+    padding: 12px 20px;
+    background-color: #c50752;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition:   background-color 0.3s ease;
+}
+
+#calculateBtn:hover{
+    background-color: #53031b;
+}
